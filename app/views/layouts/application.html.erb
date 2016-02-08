@@ -7,7 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<header>
+	<h1>blogr</h1>
+	<nav>
+		<ul>
+			<li><%= link_to 'all posts', posts_path %></li>
+			<li><a href="/posts/new">new post</a></li>
+		</ul>
+	</nav>
+</header>
 <%= yield %>
 
 </body>
